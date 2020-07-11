@@ -15,6 +15,5 @@ This repository provides a starting point for SPA projects using following stack
 
 ## TODOs
 - Keep tracking the version upgrade of dependencies
-- **Fix low severity vulnerabilities of lodash when fix is out**
 - Fine-tune `.eslintrc.js` and `tsconfig.json` properly (RTFM!)
 - and more..
