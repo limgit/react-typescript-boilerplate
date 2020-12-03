@@ -6,6 +6,7 @@
     "allowSyntheticDefaultImports": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
+    "noUncheckedIndexedAccess": true,
     "strict": true,
     "strictNullChecks": true,
     "strictPropertyInitialization": true,
