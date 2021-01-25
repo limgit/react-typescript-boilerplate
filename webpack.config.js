@@ -17,7 +17,7 @@ module.exports = (_, argv) => {
     entry: path.resolve(__dirname, 'src/index'),
     output: {
       path: path.resolve(__dirname, 'build'),
-      filename: '[name].[hash].bundle.js',
+      filename: '[name].[contenthash].bundle.js',
       chunkFilename: '[name].[chunkhash].bundle.js',
       publicPath: '/',
     },
@@ -41,7 +41,12 @@ module.exports = (_, argv) => {
       new CleanWebpackPlugin(),
       new CopyWebpackPlugin({
         patterns: [
-          { from: 'public' },
+          {
+            from: 'public',
+            globOptions: {
+              ignore: ['**/index.html'],
+            },
+          },
         ],
       }),
       new HtmlWebpackPlugin({
