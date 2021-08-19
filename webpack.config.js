@@ -61,7 +61,9 @@ module.exports = (_, argv) => {
   return {
     ...baseConfig,
     devServer: {
-      contentBase: './build',
+      static: {
+        directory: path.resolve(__dirname, 'build'),
+      },
       hot: true,
       compress: true,
       historyApiFallback: true,
