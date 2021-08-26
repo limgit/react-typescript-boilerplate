@@ -24,6 +24,7 @@ module.exports = {
     'webpack.config.js',
   ],
   rules: {
+    'arrow-body-style': 'off',
     'import/prefer-default-export': 'off',
     'max-len': ['error', {
       code: 120,
@@ -31,6 +32,7 @@ module.exports = {
       ignoreComments: true,
     }],
     'react/prop-types': 'off',
+    'react/require-default-props': 'off',
     '@typescript-eslint/interface-name-prefix': 'off',
     '@typescript-eslint/member-delimiter-style': ['error', {
       multiline: {
