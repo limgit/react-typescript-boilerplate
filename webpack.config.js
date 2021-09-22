@@ -1,5 +1,4 @@
 const path = require('path');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
@@ -20,6 +19,7 @@ module.exports = (_, argv) => {
       filename: '[name].[contenthash].bundle.js',
       chunkFilename: '[name].[chunkhash].bundle.js',
       publicPath: '/',
+      clean: true,
     },
     module: {
       rules: [
@@ -38,7 +38,6 @@ module.exports = (_, argv) => {
       },
     },
     plugins: [
-      new CleanWebpackPlugin(),
       new CopyWebpackPlugin({
         patterns: [
           {
