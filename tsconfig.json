@@ -20,7 +20,7 @@
       "dom"
     ],
     "removeComments": true,
-    "jsx": "react",
+    "jsx": "react-jsx",
     "paths": {
       "@/*": ["src/*"]
     }
