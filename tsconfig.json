@@ -14,21 +14,13 @@
     "baseUrl": "./",
     "module": "esnext",
     "moduleResolution": "node",
-    "lib": [
-      "es2015",
-      "es2017",
-      "dom"
-    ],
+    "lib": ["es2015", "es2017", "dom"],
     "removeComments": true,
     "jsx": "react-jsx",
     "paths": {
       "@/*": ["src/*"]
     }
   },
-  "include": [
-    "src/**/*"
-  ],
-  "exclude": [
-    "node_modules/*",
-  ]
+  "include": ["src/**/*"],
+  "exclude": ["node_modules/*"]
 }
