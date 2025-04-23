@@ -6,7 +6,7 @@ This repository provides a starting point for SPA projects using the following s
 
 - [React](https://reactjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
-- [ESLint](https://eslint.org/) with the [airbnb-typescript](https://github.com/iamturns/eslint-config-airbnb-typescript) extension
+- [ESLint](https://eslint.org/) with some recommended configs.
 - [Prettier](https://prettier.io/)
 - [Webpack](https://webpack.js.org/) with [webpack-dev-server](https://github.com/webpack/webpack-dev-server) (hot loading enabled)
 
@@ -19,5 +19,5 @@ This repository provides a starting point for SPA projects using the following s
 ## TODOs
 
 - Keep track of the version upgrades of dependencies.
-- Fine-tune `.eslintrc.js` and `tsconfig.json` properly (RTFM!).
+- Fine-tune `eslint.config.mjs` and `tsconfig.json` properly (RTFM!).
 - and more..
