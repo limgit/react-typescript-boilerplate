@@ -42,4 +42,7 @@ export default tseslint.config(
   eslintPluginReactHooks.configs["recommended-latest"],
   eslintPluginJsxA11y.flatConfigs.recommended,
   eslintConfigPrettier,
+  {
+    ignores: ["webpack.config.js", "eslint.config.mjs"],
+  },
 );

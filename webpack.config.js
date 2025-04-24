@@ -24,7 +24,7 @@ module.exports = (_, argv) => {
     module: {
       rules: [
         {
-          test: /\.tsx?/,
+          test: /\.tsx?$/,
           loader: "ts-loader",
           options: {
             configFile: path.resolve(__dirname, "./tsconfig.json"),
