@@ -1,8 +1,9 @@
 declare module "eslint-plugin-import" {
-  export default {
+  const _exports: {
     flatConfigs: {
-      recommended: {},
-      typescript: {},
-    },
+      recommended: object;
+      typescript: object;
+    };
   };
+  export default _exports;
 }

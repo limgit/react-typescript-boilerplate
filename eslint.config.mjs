@@ -1,5 +1,7 @@
 // @ts-check
 
+/// <reference types="./eslint-plugin-import" />
+
 import eslint from "@eslint/js";
 import tseslint from "typescript-eslint";
 import eslintConfigPrettier from "eslint-config-prettier/flat";
