@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "format": "prettier --write .",
-    "build": "webpack --mode production --config webpack.config.js",
+    "build": "webpack --mode production --config webpack.config.mjs",
     "dev": "webpack serve --open",
     "lint": "eslint --ext .ts,.tsx src/",
     "lint:error": "eslint --ext .ts,.tsx src/ --quiet",

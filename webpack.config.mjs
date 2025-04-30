@@ -1,8 +1,10 @@
-const path = require("path");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-const CopyWebpackPlugin = require("copy-webpack-plugin");
+import path from "path";
+import HtmlWebpackPlugin from "html-webpack-plugin";
+import CopyWebpackPlugin from "copy-webpack-plugin";
 
-module.exports = (_, argv) => {
+const __dirname = import.meta.dirname;
+
+export default (_, argv) => {
   const isProd = argv.mode === "production";
   const baseConfig = {
     mode: isProd ? "production" : "development",
