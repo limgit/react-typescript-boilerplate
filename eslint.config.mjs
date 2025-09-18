@@ -1,8 +1,7 @@
 // @ts-check
 
-/// <reference types="./eslint-plugin-import" />
-
 import eslint from "@eslint/js";
+import { defineConfig } from "eslint/config";
 import tseslint from "typescript-eslint";
 import eslintConfigPrettier from "eslint-config-prettier/flat";
 import eslintPluginImport from "eslint-plugin-import";
@@ -10,16 +9,13 @@ import eslintPluginReact from "eslint-plugin-react";
 import eslintPluginReactHooks from "eslint-plugin-react-hooks";
 import eslintPluginJsxA11y from "eslint-plugin-jsx-a11y";
 
-export default tseslint.config(
+export default defineConfig(
   eslint.configs.recommended,
   tseslint.configs.recommended,
   tseslint.configs.stylistic,
   {
     files: ["**/*.{ts,tsx}"],
-    extends: [
-      eslintPluginImport.flatConfigs.recommended,
-      eslintPluginImport.flatConfigs.typescript,
-    ],
+    extends: [eslintPluginImport.flatConfigs.recommended, eslintPluginImport.flatConfigs.typescript],
     settings: {
       "import/resolver": {
         alias: {
@@ -31,10 +27,7 @@ export default tseslint.config(
   },
   {
     files: ["**/*.{ts,tsx}"],
-    extends: [
-      eslintPluginReact.configs.flat.recommended,
-      eslintPluginReact.configs.flat["jsx-runtime"],
-    ],
+    extends: [eslintPluginReact.configs.flat.recommended, eslintPluginReact.configs.flat["jsx-runtime"]],
     settings: {
       react: {
         version: "detect",
@@ -45,6 +38,6 @@ export default tseslint.config(
   eslintPluginJsxA11y.flatConfigs.recommended,
   eslintConfigPrettier,
   {
-    ignores: ["webpack.config.js", "eslint.config.mjs"],
+    ignores: ["webpack.config.mjs", "eslint.config.mjs"],
   },
 );
