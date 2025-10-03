@@ -34,10 +34,17 @@ export default defineConfig(
       },
     },
   },
-  eslintPluginReactHooks.configs["recommended-latest"],
+  {
+    files: ["**/*.{js,jsx,ts,tsx}"],
+    plugins: {
+      "react-hooks": eslintPluginReactHooks,
+    },
+    // XXX: Temporal workaround until https://github.com/facebook/react/pull/34700 is published.
+    extends: ["react-hooks/flat/recommended"],
+  },
   eslintPluginJsxA11y.flatConfigs.recommended,
   eslintConfigPrettier,
   {
-    ignores: ["webpack.config.mjs", "eslint.config.mjs"],
+    ignores: ["eslint.config.mjs"],
   },
 );
