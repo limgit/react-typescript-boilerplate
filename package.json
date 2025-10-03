@@ -5,10 +5,12 @@
   "main": "index.js",
   "scripts": {
     "format": "prettier --write .",
-    "build": "webpack --mode production --config webpack.config.mjs",
-    "dev": "webpack serve --open",
+    "build": "vite build",
+    "start": "vite preview --port 8080",
+    "dev": "vite --port 8080",
     "lint": "eslint --ext .ts,.tsx src/",
     "lint:error": "eslint --ext .ts,.tsx src/ --quiet",
+    "typecheck": "tsc --noEmit",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,7 +23,7 @@
     "@eslint/js": "^9.35.0",
     "@types/react": "^19.1.13",
     "@types/react-dom": "^19.1.9",
-    "copy-webpack-plugin": "^13.0.1",
+    "@vitejs/plugin-react": "^5.0.4",
     "eslint": "^9.35.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-import-resolver-alias": "^1.1.2",
@@ -29,14 +31,11 @@
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^5.2.0",
-    "html-webpack-plugin": "^5.6.4",
     "prettier": "3.6.2",
-    "ts-loader": "^9.5.4",
     "typescript": "^5.9.2",
     "typescript-eslint": "^8.44.0",
-    "webpack": "^5.101.3",
-    "webpack-cli": "^6.0.1",
-    "webpack-dev-server": "^5.2.2"
+    "vite": "^7.1.9",
+    "vite-tsconfig-paths": "^5.1.4"
   },
   "dependencies": {
     "react": "^19.1.1",

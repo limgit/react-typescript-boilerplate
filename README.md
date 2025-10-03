@@ -8,13 +8,12 @@ This repository provides a starting point for SPA projects using the following s
 - [TypeScript](https://www.typescriptlang.org/)
 - [ESLint](https://eslint.org/) with some recommended configs.
 - [Prettier](https://prettier.io/)
-- [Webpack](https://webpack.js.org/) with [webpack-dev-server](https://github.com/webpack/webpack-dev-server) (hot loading enabled)
+- [Vite](https://vite.dev/)
 
 ## Some Notes
 
 - The source root (i.e., `src/`) can be referenced using the `@/` prefix.
-- The build result goes into the `build/` directory.
-- Items under `public/` will be copied to the `build/` directory directly.
+- The build result goes into the `dist/` directory.
 
 ## TODOs
 
