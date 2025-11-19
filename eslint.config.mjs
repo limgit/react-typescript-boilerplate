@@ -34,14 +34,7 @@ export default defineConfig(
       },
     },
   },
-  {
-    files: ["**/*.{js,jsx,ts,tsx}"],
-    plugins: {
-      "react-hooks": eslintPluginReactHooks,
-    },
-    // XXX: Temporal workaround until https://github.com/facebook/react/pull/34700 is published.
-    extends: ["react-hooks/flat/recommended"],
-  },
+  eslintPluginReactHooks.configs.flat.recommended,
   eslintPluginJsxA11y.flatConfigs.recommended,
   eslintConfigPrettier,
   {
