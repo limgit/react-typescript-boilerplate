@@ -20,11 +20,11 @@
   "author": "HyunSu Lim",
   "license": "ISC",
   "devDependencies": {
-    "@eslint/js": "^9.39.1",
+    "@eslint/js": "^9.39.4",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
-    "@vitejs/plugin-react": "^5.1.1",
-    "eslint": "^9.39.1",
+    "@vitejs/plugin-react": "^6.0.1",
+    "eslint": "^9.39.4",
     "eslint-config-prettier": "^10.1.8",
     "eslint-import-resolver-alias": "^1.1.2",
     "eslint-plugin-import": "^2.32.0",
@@ -34,8 +34,7 @@
     "prettier": "3.8.1",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.57.1",
-    "vite": "^7.2.2",
-    "vite-tsconfig-paths": "^5.1.4"
+    "vite": "^8.0.2"
   },
   "dependencies": {
     "react": "^19.2.4",
