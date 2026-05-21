@@ -1,2 +1,12 @@
 onlyBuiltDependencies:
   - esbuild
+
+minimumReleaseAge: 10080
+
+minimumReleaseAgeExclude: []
+
+strictDepBuilds: true
+
+trustPolicy: no-downgrade
+
+trustPolicyExclude: []
